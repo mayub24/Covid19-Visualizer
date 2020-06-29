@@ -1,0 +1,74 @@
+<h1>All Rona Data</h1>
+
+<input type="text" #box>
+<button (click)="btnClick(box.value)">Enter</button>
+<p>{{typedValue}}</p>
+
+
+<div class="total">
+    <div class="card" *ngIf="check">
+
+        <h3>Country: {{typedValue}}</h3>
+
+        <div class="count">
+
+            <div class="total-confirmed">
+                <p><strong>Total Confirmed: </strong>{{ronaData.confirmed.value}}</p>
+            </div>
+
+
+            <div class="total-recovered">
+                <p><strong>Total Recovered: </strong>{{ronaData.recovered.value}}</p>
+            </div>
+
+            <div class="total-death">
+                <p><strong>Total Deaths: </strong>{{ronaData.deaths.value}}</p>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="err" *ngIf="!check">
+        <h3>{{errz}}</h3>
+    </div>
+
+</div>
+
+<div class="detail-total">
+
+    <h3 *ngIf="provData && check">Cases for each Province/State: </h3>
+
+    <div class="small-card" *ngFor="let area of provData">
+
+        <h1>
+            {{area.provinceState}}
+        </h1>
+
+
+        <div class="all-counts">
+
+            <div class="prov-confirmed">
+                <p><strong>Confirmed Cases</strong></p>
+                <p>{{area.confirmed}}</p>
+            </div>
+
+            <div class="prov-recovered">
+                <p><strong>Cases Recovered</strong></p>
+                <p>{{area.recovered}}</p>
+            </div>
+
+            <div class="prov-deaths">
+                <p><strong>Deaths</strong></p>
+                <p>{{area.deaths}}</p>
+            </div>
+
+            <div class="prov-active">
+                <p><strong>Active Cases</strong></p>
+                <p>{{area.active}}</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
