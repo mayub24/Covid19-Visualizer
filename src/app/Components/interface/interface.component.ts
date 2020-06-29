@@ -20,18 +20,12 @@ export class InterfaceComponent implements OnInit {
   provData: any;
 
   constructor(private getService: GetDataService) {
-    //this.getService.getData(this.typedValue);
   }
 
 
   ngOnInit() {
-  }
-
-  btnClick(val) {
-    this.typedValue = val;
-
     // API #1
-    this.getService.getData(val).subscribe(allData => {
+    this.getService.getData().subscribe(allData => {
 
       console.log(allData);
 
@@ -49,7 +43,7 @@ export class InterfaceComponent implements OnInit {
 
 
     // API #2
-    this.getService.getDetailedData(val).subscribe((moreData) => {
+    this.getService.getDetailedData().subscribe((moreData) => {
       console.log(moreData);
 
       this.provData = moreData;
@@ -60,7 +54,6 @@ export class InterfaceComponent implements OnInit {
 
 
     })
-
   }
 
 

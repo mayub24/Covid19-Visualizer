@@ -12,20 +12,20 @@ import { data } from '../Models/ronaData';
 
 export class GetDataService {
 
-  ronaApi: string = 'https://covid19.mathdro.id/api/countries';
-  detailedRonaApi: string = 'https://covid19.mathdro.id/api/countries';
+  ronaApi: string = 'https://covid19.mathdro.id/api/countries/canada';
+  detailedRonaApi: string = 'https://covid19.mathdro.id/api/countries/canada/confirmed';
 
 
   constructor(private http: HttpClient) {
 
   }
 
-  getData(typedVal): Observable<any> {
-    return this.http.get<any>(`${this.ronaApi}/${typedVal}`);
+  getData(): Observable<any> {
+    return this.http.get<any>(`${this.ronaApi}`);
   }
 
-  getDetailedData(typedVal): Observable<any> {
-    return this.http.get<any>(`${this.detailedRonaApi}/${typedVal}/confirmed`);
+  getDetailedData(): Observable<any> {
+    return this.http.get<any>(`${this.detailedRonaApi}`);
   }
 
 
