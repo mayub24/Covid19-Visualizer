@@ -56,5 +56,15 @@ export class InterfaceComponent implements OnInit {
     })
   }
 
+  clickList(e) {
+    console.log(e.target.textContent);
+
+
+
+  }
+
+
+
+
 
 }

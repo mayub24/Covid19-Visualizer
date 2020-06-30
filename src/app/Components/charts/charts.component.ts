@@ -10,8 +10,11 @@ import { SwiperOptions } from 'swiper';
 })
 export class ChartsComponent implements OnInit {
 
+  typedValue = 'canada';
+
   config: SwiperOptions = {
     effect: 'coverflow',
+    initialSlide: 2,
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: 'auto',

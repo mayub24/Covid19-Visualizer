@@ -7,7 +7,9 @@
 
     <div class="card" *ngIf="check">
 
-        <h2>Canada</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg" alt=""
+            width="250px" style="margin-bottom: 1em;">
+        <!-- <h2>Canada</h2> -->
 
         <div class="count">
 
@@ -38,49 +40,10 @@
 
 </div>
 
-<div class="detail-total">
 
-    <h3 *ngIf="provData && check">Cases for each Province/State: </h3>
+<h1 class="numbz">Cases in Numbers</h1>
 
-    <div class="small-card">
-
-        <div class="inner-card" *ngFor="let area of provData">
-
-            <h1>
-                {{area.provinceState}}
-            </h1>
-
-
-            <div class="all-counts">
-
-                <div class="prov-confirmed">
-                    <p><strong>Confirmed Cases</strong></p>
-                    <p>{{area.confirmed}}</p>
-                </div>
-
-                <div class="prov-recovered">
-                    <p><strong>Cases Recovered</strong></p>
-                    <p>{{area.recovered}}</p>
-                </div>
-
-                <div class="prov-deaths">
-                    <p><strong>Confirmed Deaths</strong></p>
-                    <p>{{area.deaths}}</p>
-                </div>
-
-                <div class="prov-active">
-                    <p><strong>Active Cases</strong></p>
-                    <p>{{area.active}}</p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <h1 class="numbz">Cases in Numbers</h1>
-
+<div class="table">
     <table>
         <thead>
             <tr>
@@ -101,10 +64,8 @@
             </tr>
         </tbody>
     </table>
-
 </div>
 
 
-<app-questions></app-questions>
 
 <app-charts></app-charts>
