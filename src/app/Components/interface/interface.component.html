@@ -1,10 +1,13 @@
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
 <h1>All Covid-19 Data</h1>
 
 <div class="total">
 
     <div class="card" *ngIf="check">
 
-        <h2>Country: Canada</h2>
+        <h2>Canada</h2>
 
         <div class="count">
 
@@ -61,7 +64,7 @@
                 </div>
 
                 <div class="prov-deaths">
-                    <p><strong>Deaths</strong></p>
+                    <p><strong>Confirmed Deaths</strong></p>
                     <p>{{area.deaths}}</p>
                 </div>
 
@@ -75,7 +78,33 @@
         </div>
 
     </div>
+
+    <h1 class="numbz">Cases in Numbers</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Province</th>
+                <th>Confirmed Cases</th>
+                <th>Cases Recovered</th>
+                <th>Confirmed Deaths</th>
+                <th>Active Cases</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let area of provData">
+                <td>{{area.provinceState}}</td>
+                <td>{{area.confirmed}}</td>
+                <td>{{area.recovered}}</td>
+                <td>{{area.deaths}}</td>
+                <td>{{area.active}}</td>
+            </tr>
+        </tbody>
+    </table>
+
 </div>
 
 
 <app-questions></app-questions>
+
+<app-charts></app-charts>

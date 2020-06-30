@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { InterfaceComponent } from './Components/interface/interface.component';
 import { QuestionsComponent } from './Components/questions/questions.component';
 import { GetDataService } from './Services/get-data.service';
+import { ChartsComponent } from './Components/charts/charts.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InterfaceComponent,
-    QuestionsComponent
+    QuestionsComponent,
+    ChartsComponent
   ],
   imports: [
     BrowserModule,

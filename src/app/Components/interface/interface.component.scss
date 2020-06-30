@@ -5,6 +5,9 @@
     padding: 0;
     text-align: center;
     margin: 0 auto;
+    // font-family: 'Montserrat', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-variant: small-caps;
 }
 
 // Total Confirmed Cases around the world
@@ -72,8 +75,73 @@
    grid-template-columns: repeat(2, 1fr);
 > *
 {
-
+    font-size: 1em;
     margin-bottom: 1em;
 }
 
+.prov-confirmed
+{
+    background-color: yellow;
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+
+.prov-recovered
+{
+    background-color: lightgreen;
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+
+.prov-deaths
+{
+    background-color: red;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    color: white;
+}
+
+.prov-active
+{
+    background-color: skyblue;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    color: white;
+}
+
+}
+
+
+table {
+//   font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+  margin: 0 auto;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 0.5em;
+  font-size: 1.3em;
+}
+
+th
+{
+    font-weight: bolder;
+}
+
+td
+{
+    // font-weight: 00;
+    border-bottom: 2px solid black;
+}
+
+tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+.numbz
+{
+    margin-bottom: 0.5em;
 }
