@@ -8,6 +8,7 @@ import { InterfaceComponent } from './Components/interface/interface.component';
 import { QuestionsComponent } from './Components/questions/questions.component';
 import { GetDataService } from './Services/get-data.service';
 import { ChartsComponent } from './Components/charts/charts.component';
+import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ChartsComponent } from './Components/charts/charts.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxUsefulSwiperModule
   ],
   providers: [GetDataService],
   bootstrap: [AppComponent]
