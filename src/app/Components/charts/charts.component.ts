@@ -25,6 +25,10 @@ export class ChartsComponent implements OnInit {
     pagination: {
       el: '.swiper-pagination',
     },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
   };
 
   barChart: any;
