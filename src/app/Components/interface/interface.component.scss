@@ -10,6 +10,13 @@
     font-variant: small-caps;
 }
 
+.data-container
+{
+    padding: 3em 0em;
+    
+    background-color: lightgray;
+}
+
 // Total Confirmed Cases around the world
 .total
 {
@@ -21,7 +28,6 @@
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        margin-top: 1em;
         > *
         {
             padding: 0.5em;
@@ -91,4 +97,12 @@ tr:nth-child(even) {
 .numbz
 {
     margin-bottom: 0.5em;
+    padding: 1em 0em;
+}
+
+
+// Table
+.table
+{
+    background-color: #fff;
 }

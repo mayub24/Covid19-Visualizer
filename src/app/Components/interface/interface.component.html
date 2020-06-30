@@ -1,49 +1,54 @@
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
 
-<h1>All Covid-19 Data</h1>
+<div class="data-container">
+    <h1>All Covid-19 Data</h1>
 
-<div class="total">
+    <div class="total">
 
-    <div class="card" *ngIf="check">
 
-        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg" alt=""
-            width="250px" style="margin-bottom: 1em;">
-        <!-- <h2>Canada</h2> -->
+        <div class="card" *ngIf="check">
 
-        <div class="count">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg" alt=""
+                width="350px" style="margin-bottom: 1em;">
+            <!-- <h2>Canada</h2> -->
 
-            <div class="total-confirmed">
-                <p><strong>Confirmed: </strong>{{ronaData.confirmed.value}}</p>
+            <div class="count">
+
+                <div class="total-confirmed">
+                    <p><strong>Confirmed: </strong>{{ronaData.confirmed.value}}</p>
+                </div>
+
+
+                <div class="total-recovered">
+                    <p><strong>Recovered: </strong>{{ronaData.recovered.value}}</p>
+                </div>
+
+                <div class="total-death">
+                    <p><strong>Deaths: </strong>{{ronaData.deaths.value}}</p>
+                </div>
+
+
             </div>
-
-
-            <div class="total-recovered">
-                <p><strong>Recovered: </strong>{{ronaData.recovered.value}}</p>
-            </div>
-
-            <div class="total-death">
-                <p><strong>Deaths: </strong>{{ronaData.deaths.value}}</p>
-            </div>
-
 
         </div>
 
-    </div>
-
-    <!-- 
+        <!-- 
     <div class="questionare">
         <h1>Questions</h1>
     </div> -->
 
 
 
+    </div>
 </div>
 
 
-<h1 class="numbz">Cases in Numbers</h1>
 
 <div class="table">
+
+    <h1 class="numbz">Cases in Numbers</h1>
+
     <table>
         <thead>
             <tr>

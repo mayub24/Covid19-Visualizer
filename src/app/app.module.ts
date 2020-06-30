@@ -9,13 +9,15 @@ import { QuestionsComponent } from './Components/questions/questions.component';
 import { GetDataService } from './Services/get-data.service';
 import { ChartsComponent } from './Components/charts/charts.component';
 import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
+import { NavbarComponent } from './Components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InterfaceComponent,
     QuestionsComponent,
-    ChartsComponent
+    ChartsComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
