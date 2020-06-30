@@ -13,17 +13,19 @@
 // Total Confirmed Cases around the world
 .total
 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-evenly;
 
     .count
     {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         flex-wrap: wrap;
+        margin-top: 1em;
         > *
         {
             padding: 0.5em;
+            margin: 0em 5em 0em 5em;
         }
     }
 }
