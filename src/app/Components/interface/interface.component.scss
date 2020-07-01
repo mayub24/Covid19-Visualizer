@@ -100,23 +100,25 @@ table {
   border-collapse: collapse;
   width: 90%;
   margin: 0 auto;
+  background-color: #fff;
 }
 
 td, th {
-  border: 1px solid #dddddd;
+//   border: 1px solid #dddddd;
   text-align: left;
-  padding: 0.5em;
+  padding: 0.75em;
   font-size: 1em;
+
+  @media(max-width: 668px)
+  {
+      font-size: 0.75em;
+  }
+
 }
 
 th
 {
     font-weight: bolder;
-}
-
-td
-{
-    // font-weight: 00;
     border-bottom: 2px solid black;
 }
 
@@ -135,11 +137,4 @@ h1
 h1.numbz
 {
     margin: 1em 0em 1em 0em;
-}
-
-
-// Table
-.table
-{
-    background-color: #fff;
 }
