@@ -54,7 +54,7 @@ export class ChartsComponent implements OnInit {
   pullAllData(data) {
 
     Chart.defaults.global.defaultFontFamily = 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif';
-    Chart.defaults.global.defaultFontSize = 18;
+    Chart.defaults.global.defaultFontSize = 16;
     Chart.defaults.global.defaultFontColor = '#777';
 
 
@@ -100,7 +100,7 @@ export class ChartsComponent implements OnInit {
           {
             display: true,
             labels: {
-              fontColor: 'green'
+              fontColor: 'black'
             }
           },
           layout: {
@@ -160,7 +160,7 @@ export class ChartsComponent implements OnInit {
           {
             display: true,
             labels: {
-              fontColor: 'green'
+              fontColor: 'black'
             }
           },
           layout: {
@@ -222,7 +222,7 @@ export class ChartsComponent implements OnInit {
           {
             display: true,
             labels: {
-              fontColor: 'green'
+              fontColor: 'black'
             }
           },
           layout: {
@@ -284,7 +284,7 @@ export class ChartsComponent implements OnInit {
           {
             display: true,
             labels: {
-              fontColor: 'green'
+              fontColor: 'black'
             }
           },
           layout: {
@@ -346,7 +346,7 @@ export class ChartsComponent implements OnInit {
           {
             display: true,
             labels: {
-              fontColor: 'green'
+              fontColor: 'black'
             }
           },
           layout: {
@@ -408,7 +408,7 @@ export class ChartsComponent implements OnInit {
           {
             display: true,
             labels: {
-              fontColor: 'green'
+              fontColor: 'black'
             }
           },
           layout: {
@@ -468,7 +468,7 @@ export class ChartsComponent implements OnInit {
           {
             display: true,
             labels: {
-              fontColor: 'green'
+              fontColor: 'black'
             }
           },
           layout: {
@@ -528,7 +528,7 @@ export class ChartsComponent implements OnInit {
           {
             display: true,
             labels: {
-              fontColor: 'green'
+              fontColor: 'black'
             }
           },
           layout: {
@@ -589,7 +589,7 @@ export class ChartsComponent implements OnInit {
           {
             display: true,
             labels: {
-              fontColor: 'green'
+              fontColor: 'black'
             }
           },
           layout: {
@@ -650,7 +650,7 @@ export class ChartsComponent implements OnInit {
           {
             display: true,
             labels: {
-              fontColor: 'green'
+              fontColor: 'black'
             }
           },
           layout: {
@@ -711,7 +711,7 @@ export class ChartsComponent implements OnInit {
           {
             display: true,
             labels: {
-              fontColor: 'green'
+              fontColor: 'black'
             }
           },
           layout: {

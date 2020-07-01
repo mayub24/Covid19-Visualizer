@@ -28,14 +28,14 @@
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        font-size: 1.5em;
+        font-size: 1em;
         margin-top: 2em;
         > *
         {
             padding: 0.5em;
             margin: 0em 5em 0em 5em;
 
-         @media(max-width: 968px)
+        @media(max-width: 968px)
         {
             margin-bottom: 1em;
         }
@@ -106,7 +106,7 @@ td, th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 0.5em;
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 th
@@ -128,13 +128,13 @@ tr:nth-child(even) {
 h1
 {
     font-weight: 100;
-    font-size: 4em;
-    margin-top: 0.5em;
+    font-size: 3em;
+    margin-bottom: 0.5em;
 }
 
 h1.numbz
 {
-    margin-bottom: 0.5em;
+    margin: 1em 0em 1em 0em;
 }
 
 
