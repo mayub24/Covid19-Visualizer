@@ -14,7 +14,7 @@
 {
     padding: 3em 0em;
     
-    background-color: lightgray;
+    background-color: #ddd;
 }
 
 // Total Confirmed Cases around the world
@@ -28,11 +28,36 @@
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
+        font-size: 1.5em;
+        margin-top: 2em;
         > *
         {
             padding: 0.5em;
             margin: 0em 5em 0em 5em;
         }
+
+        .total-confirmed
+        {
+            background-color: yellow;
+            padding: 0.5em;
+            border-radius: 1em;
+        }
+
+        .total-recovered
+        {
+            background-color: lightgreen;
+            padding: 0.5em;
+            border-radius: 1em;
+        }
+
+        .total-death
+        {
+            background-color: #ff4043;
+            padding: 0.5em;
+            border-radius: 1em;
+            // color: white;
+        }
+
     }
 }
 
@@ -94,10 +119,17 @@ tr:nth-child(even) {
   background-color: #ddd;
 }
 
-.numbz
+
+h1
+{
+    font-weight: 100;
+    font-size: 4em;
+    margin-top: 0.5em;
+}
+
+h1.numbz
 {
     margin-bottom: 0.5em;
-    padding: 1em 0em;
 }
 
 

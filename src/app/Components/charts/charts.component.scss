@@ -5,8 +5,10 @@ canvas
 
 .container
 {
-    margin-bottom: 50em;
+    margin-top: 5em;
+    padding-top: 5em;
     padding-bottom: 5em;
+    background-color: lightblue;
 }
 
 .swiper-pagination-bullets
@@ -14,4 +16,11 @@ canvas
     bottom: 0px;
     margin: 0 auto;
     left: 60px;
+}
+
+h1
+{
+    font-weight: 100;
+    font-size: 4em;
+    margin-bottom: 1em;
 }
