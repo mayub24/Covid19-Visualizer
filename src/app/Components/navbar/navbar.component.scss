@@ -12,7 +12,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-variant: small-caps;
 }
 
 
@@ -20,6 +21,11 @@
 {
   background-color: #dc3545;
   color: #fff;
+}
+
+h2
+{
+  font-weight: 400;
 }
 
 .navbar {
@@ -44,10 +50,13 @@ ul {
 li {
     padding-bottom: 0.3rem;
     margin: 0 3em 0em 3em;
+    font-size: 1em;
 }
 
-.navbar a {
+a
+{
   color: #fff;
   padding: 0.45rem;
   margin: 0 0.25rem;
+  text-decoration: none;
 }
