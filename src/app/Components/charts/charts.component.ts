@@ -53,6 +53,10 @@ export class ChartsComponent implements OnInit {
 
   pullAllData(data) {
 
+    Chart.defaults.global.defaultFontFamily = 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif';
+    Chart.defaults.global.defaultFontSize = 18;
+    Chart.defaults.global.defaultFontColor = '#777';
+
 
     // Chart #1
     this.barChart = new Chart('barChartz',
@@ -69,28 +73,28 @@ export class ChartsComponent implements OnInit {
               `${data[0].active}`
             ],
             backgroundColor: [
-              '#eee',
-              '#111',
-              '#256',
-              'rgba(75, 192, 192, 0.2)',
-              'rgba(153, 102, 255, 0.2)',
-              'rgba(255, 159, 64, 0.2)'
+              'rgba(255, 253, 158, 0.8)',
+              'rgba(138, 255, 147, 0.7)',
+              'rgba(247, 0, 25, 0.7)',
+              'rgba(74, 167, 255, 0.7)'
             ],
-            borderWidth: 4,
-            borderColor: [
-              'red',
-              'red'
-            ],
+            borderWidth: 3,
+            borderColor: 'black',
             hoverBorderWidth: 3,
-            hoverBorderColor: 'black'
+            hoverBorderColor: [
+              'gray',
+              'green',
+              'red',
+              'blue'
+            ]
           }]
         },
         options: {
           title:
           {
-            display: true,
-            text: 'COVID-19 Cases in Canada by Province',
-            fontSize: 25
+            // display: true,
+            // text: 'COVID-19 Cases in Canada by Province',
+            // fontSize: 25
           },
           legend:
           {
@@ -129,28 +133,28 @@ export class ChartsComponent implements OnInit {
               `${data[1].active}`
             ],
             backgroundColor: [
-              '#eee',
-              '#111',
-              '#256',
-              'rgba(75, 192, 192, 0.2)',
-              'rgba(153, 102, 255, 0.2)',
-              'rgba(255, 159, 64, 0.2)'
+              'rgba(255, 253, 158, 0.8)',
+              'rgba(138, 255, 147, 0.7)',
+              'rgba(247, 0, 25, 0.7)',
+              'rgba(74, 167, 255, 0.7)'
             ],
-            borderWidth: 4,
-            borderColor: [
-              'red',
-              'red'
-            ],
+            borderWidth: 3,
+            borderColor: 'black',
             hoverBorderWidth: 3,
-            hoverBorderColor: 'black'
+            hoverBorderColor: [
+              'gray',
+              'green',
+              'red',
+              'blue'
+            ]
           }]
         },
         options: {
           title:
           {
-            display: true,
-            text: 'COVID-19 Cases in Canada by Province',
-            fontSize: 25
+            // display: true,
+            // text: 'COVID-19 Cases in Canada by Province',
+            // fontSize: 25
           },
           legend:
           {
@@ -191,28 +195,28 @@ export class ChartsComponent implements OnInit {
               `${data[2].active}`
             ],
             backgroundColor: [
-              '#eee',
-              '#111',
-              '#256',
-              'rgba(75, 192, 192, 0.2)',
-              'rgba(153, 102, 255, 0.2)',
-              'rgba(255, 159, 64, 0.2)'
+              'rgba(255, 253, 158, 0.8)',
+              'rgba(138, 255, 147, 0.7)',
+              'rgba(247, 0, 25, 0.7)',
+              'rgba(74, 167, 255, 0.7)'
             ],
-            borderWidth: 4,
-            borderColor: [
-              'red',
-              'red'
-            ],
+            borderWidth: 3,
+            borderColor: 'black',
             hoverBorderWidth: 3,
-            hoverBorderColor: 'black'
+            hoverBorderColor: [
+              'gray',
+              'green',
+              'red',
+              'blue'
+            ]
           }]
         },
         options: {
           title:
           {
-            display: true,
-            text: 'COVID-19 Cases in Canada by Province',
-            fontSize: 25
+            // display: true,
+            // text: 'COVID-19 Cases in Canada by Province',
+            // fontSize: 25
           },
           legend:
           {
@@ -253,28 +257,28 @@ export class ChartsComponent implements OnInit {
               `${data[3].active}`
             ],
             backgroundColor: [
-              '#eee',
-              '#111',
-              '#256',
-              'rgba(75, 192, 192, 0.2)',
-              'rgba(153, 102, 255, 0.2)',
-              'rgba(255, 159, 64, 0.2)'
+              'rgba(255, 253, 158, 0.8)',
+              'rgba(138, 255, 147, 0.7)',
+              'rgba(247, 0, 25, 0.7)',
+              'rgba(74, 167, 255, 0.7)'
             ],
-            borderWidth: 4,
-            borderColor: [
-              'red',
-              'red'
-            ],
+            borderWidth: 3,
+            borderColor: 'black',
             hoverBorderWidth: 3,
-            hoverBorderColor: 'black'
+            hoverBorderColor: [
+              'gray',
+              'green',
+              'red',
+              'blue'
+            ]
           }]
         },
         options: {
           title:
           {
-            display: true,
-            text: 'COVID-19 Cases in Canada by Province',
-            fontSize: 25
+            // display: true,
+            // text: 'COVID-19 Cases in Canada by Province',
+            // fontSize: 25
           },
           legend:
           {
@@ -315,28 +319,28 @@ export class ChartsComponent implements OnInit {
               `${data[4].active}`
             ],
             backgroundColor: [
-              '#eee',
-              '#111',
-              '#256',
-              'rgba(75, 192, 192, 0.2)',
-              'rgba(153, 102, 255, 0.2)',
-              'rgba(255, 159, 64, 0.2)'
+              'rgba(255, 253, 158, 0.8)',
+              'rgba(138, 255, 147, 0.7)',
+              'rgba(247, 0, 25, 0.7)',
+              'rgba(74, 167, 255, 0.7)'
             ],
-            borderWidth: 4,
-            borderColor: [
-              'red',
-              'red'
-            ],
+            borderWidth: 3,
+            borderColor: 'black',
             hoverBorderWidth: 3,
-            hoverBorderColor: 'black'
+            hoverBorderColor: [
+              'gray',
+              'green',
+              'red',
+              'blue'
+            ]
           }]
         },
         options: {
           title:
           {
-            display: true,
-            text: 'COVID-19 Cases in Canada by Province',
-            fontSize: 25
+            // display: true,
+            // text: 'COVID-19 Cases in Canada by Province',
+            // fontSize: 25
           },
           legend:
           {
@@ -377,28 +381,28 @@ export class ChartsComponent implements OnInit {
               `${data[5].active}`
             ],
             backgroundColor: [
-              '#eee',
-              '#111',
-              '#256',
-              'rgba(75, 192, 192, 0.2)',
-              'rgba(153, 102, 255, 0.2)',
-              'rgba(255, 159, 64, 0.2)'
+              'rgba(255, 253, 158, 0.8)',
+              'rgba(138, 255, 147, 0.7)',
+              'rgba(247, 0, 25, 0.7)',
+              'rgba(74, 167, 255, 0.7)'
             ],
-            borderWidth: 4,
-            borderColor: [
-              'red',
-              'red'
-            ],
+            borderWidth: 3,
+            borderColor: 'black',
             hoverBorderWidth: 3,
-            hoverBorderColor: 'black'
+            hoverBorderColor: [
+              'gray',
+              'green',
+              'red',
+              'blue'
+            ]
           }]
         },
         options: {
           title:
           {
-            display: true,
-            text: 'COVID-19 Cases in Canada by Province',
-            fontSize: 25
+            // display: true,
+            // text: 'COVID-19 Cases in Canada by Province',
+            // fontSize: 25
           },
           legend:
           {
@@ -419,7 +423,6 @@ export class ChartsComponent implements OnInit {
             enabled: true
           }
         },
-
       });
 
 
@@ -438,28 +441,28 @@ export class ChartsComponent implements OnInit {
               `${data[6].active}`
             ],
             backgroundColor: [
-              '#eee',
-              '#111',
-              '#256',
-              'rgba(75, 192, 192, 0.2)',
-              'rgba(153, 102, 255, 0.2)',
-              'rgba(255, 159, 64, 0.2)'
+              'rgba(255, 253, 158, 0.8)',
+              'rgba(138, 255, 147, 0.7)',
+              'rgba(247, 0, 25, 0.7)',
+              'rgba(74, 167, 255, 0.7)'
             ],
-            borderWidth: 4,
-            borderColor: [
-              'red',
-              'red'
-            ],
+            borderWidth: 3,
+            borderColor: 'black',
             hoverBorderWidth: 3,
-            hoverBorderColor: 'black'
+            hoverBorderColor: [
+              'gray',
+              'green',
+              'red',
+              'blue'
+            ]
           }]
         },
         options: {
           title:
           {
-            display: true,
-            text: 'COVID-19 Cases in Canada by Province',
-            fontSize: 25
+            // display: true,
+            // text: 'COVID-19 Cases in Canada by Province',
+            // fontSize: 25
           },
           legend:
           {
@@ -480,7 +483,6 @@ export class ChartsComponent implements OnInit {
             enabled: true
           }
         },
-
       });
 
 
@@ -499,28 +501,28 @@ export class ChartsComponent implements OnInit {
               `${data[7].active}`
             ],
             backgroundColor: [
-              '#eee',
-              '#111',
-              '#256',
-              'rgba(75, 192, 192, 0.2)',
-              'rgba(153, 102, 255, 0.2)',
-              'rgba(255, 159, 64, 0.2)'
+              'rgba(255, 253, 158, 0.8)',
+              'rgba(138, 255, 147, 0.7)',
+              'rgba(247, 0, 25, 0.7)',
+              'rgba(74, 167, 255, 0.7)'
             ],
-            borderWidth: 4,
-            borderColor: [
-              'red',
-              'red'
-            ],
+            borderWidth: 3,
+            borderColor: 'black',
             hoverBorderWidth: 3,
-            hoverBorderColor: 'black'
+            hoverBorderColor: [
+              'gray',
+              'green',
+              'red',
+              'blue'
+            ]
           }]
         },
         options: {
           title:
           {
-            display: true,
-            text: 'COVID-19 Cases in Canada by Province',
-            fontSize: 25
+            // display: true,
+            // text: 'COVID-19 Cases in Canada by Province',
+            // fontSize: 25
           },
           legend:
           {
@@ -541,7 +543,6 @@ export class ChartsComponent implements OnInit {
             enabled: true
           }
         },
-
       });
 
 
@@ -561,28 +562,28 @@ export class ChartsComponent implements OnInit {
               `${data[8].active}`
             ],
             backgroundColor: [
-              '#eee',
-              '#111',
-              '#256',
-              'rgba(75, 192, 192, 0.2)',
-              'rgba(153, 102, 255, 0.2)',
-              'rgba(255, 159, 64, 0.2)'
+              'rgba(255, 253, 158, 0.8)',
+              'rgba(138, 255, 147, 0.7)',
+              'rgba(247, 0, 25, 0.7)',
+              'rgba(74, 167, 255, 0.7)'
             ],
-            borderWidth: 4,
-            borderColor: [
-              'red',
-              'red'
-            ],
+            borderWidth: 3,
+            borderColor: 'black',
             hoverBorderWidth: 3,
-            hoverBorderColor: 'black'
+            hoverBorderColor: [
+              'gray',
+              'green',
+              'red',
+              'blue'
+            ]
           }]
         },
         options: {
           title:
           {
-            display: true,
-            text: 'COVID-19 Cases in Canada by Province',
-            fontSize: 25
+            // display: true,
+            // text: 'COVID-19 Cases in Canada by Province',
+            // fontSize: 25
           },
           legend:
           {
@@ -622,28 +623,28 @@ export class ChartsComponent implements OnInit {
               `${data[9].active}`
             ],
             backgroundColor: [
-              '#eee',
-              '#111',
-              '#256',
-              'rgba(75, 192, 192, 0.2)',
-              'rgba(153, 102, 255, 0.2)',
-              'rgba(255, 159, 64, 0.2)'
+              'rgba(255, 253, 158, 0.8)',
+              'rgba(138, 255, 147, 0.7)',
+              'rgba(247, 0, 25, 0.7)',
+              'rgba(74, 167, 255, 0.7)'
             ],
-            borderWidth: 4,
-            borderColor: [
-              'red',
-              'red'
-            ],
+            borderWidth: 3,
+            borderColor: 'black',
             hoverBorderWidth: 3,
-            hoverBorderColor: 'black'
+            hoverBorderColor: [
+              'gray',
+              'green',
+              'red',
+              'blue'
+            ]
           }]
         },
         options: {
           title:
           {
-            display: true,
-            text: 'COVID-19 Cases in Canada by Province',
-            fontSize: 25
+            // display: true,
+            // text: 'COVID-19 Cases in Canada by Province',
+            // fontSize: 25
           },
           legend:
           {
@@ -683,28 +684,28 @@ export class ChartsComponent implements OnInit {
               `${data[10].active}`
             ],
             backgroundColor: [
-              '#eee',
-              '#111',
-              '#256',
-              'rgba(75, 192, 192, 0.2)',
-              'rgba(153, 102, 255, 0.2)',
-              'rgba(255, 159, 64, 0.2)'
+              'rgba(255, 253, 158, 0.8)',
+              'rgba(138, 255, 147, 0.7)',
+              'rgba(247, 0, 25, 0.7)',
+              'rgba(74, 167, 255, 0.7)'
             ],
-            borderWidth: 4,
-            borderColor: [
-              'red',
-              'red'
-            ],
+            borderWidth: 3,
+            borderColor: 'black',
             hoverBorderWidth: 3,
-            hoverBorderColor: 'black'
+            hoverBorderColor: [
+              'gray',
+              'green',
+              'red',
+              'blue'
+            ]
           }]
         },
         options: {
           title:
           {
-            display: true,
-            text: 'COVID-19 Cases in Canada by Province',
-            fontSize: 25
+            // display: true,
+            // text: 'COVID-19 Cases in Canada by Province',
+            // fontSize: 25
           },
           legend:
           {
