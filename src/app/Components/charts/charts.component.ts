@@ -56,7 +56,7 @@ export class ChartsComponent implements OnInit {
 
   barChart: any;
   allPulledData: any;
-  barChartType: any = 'pie';
+  barChartType: any = 'bar';
 
   constructor(private getService: GetDataService) { }
 
@@ -66,7 +66,7 @@ export class ChartsComponent implements OnInit {
 
       this.allPulledData = moreData;
 
-      // this.pullAllData(this.allPulledData)
+      this.pullAllData(this.allPulledData)
     });
 
 
