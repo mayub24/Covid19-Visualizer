@@ -93,27 +93,6 @@
     color: white;
 }
 
-#ontariolink{
-    margin-top: 3rem;
-    a{
-        font-size:25px;
-        text-decoration: none;
-        color:black;
-        padding:10px;
-    }
-}
-
-.items{
-    margin: 1em 0em 1em 0em;
-}
-
-.item-container{
-    h2{
-        margin-top:2rem;
-    }
-}
-
-
 
 table {
 //   font-family: arial, sans-serif;
@@ -157,4 +136,14 @@ h1
 h1.numbz
 {
     margin: 1em 0em 1em 0em;
+}
+
+#ontariolink{
+    margin-top: 2rem;
+    a{
+        font-size:1.5em;
+        text-decoration: none;
+        color:black;
+        padding:1em;
+    }
 }

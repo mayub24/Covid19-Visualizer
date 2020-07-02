@@ -10,6 +10,7 @@ import { GetDataService } from './Services/get-data.service';
 import { ChartsComponent } from './Components/charts/charts.component';
 import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 import { NavbarComponent } from './Components/navbar/navbar.component';
+import { EquipmentComponent } from './Components/equipment/equipment.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NavbarComponent } from './Components/navbar/navbar.component';
     InterfaceComponent,
     QuestionsComponent,
     ChartsComponent,
-    NavbarComponent
+    NavbarComponent,
+    EquipmentComponent
   ],
   imports: [
     BrowserModule,

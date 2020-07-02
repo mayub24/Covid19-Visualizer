@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Chart } from 'chart.js';
 import { GetDataService } from '../../Services/get-data.service';
 import { SwiperOptions } from 'swiper';
-import { createGzip } from 'zlib';
 
 @Component({
   selector: 'app-charts',
