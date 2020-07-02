@@ -11,6 +11,7 @@ import { ChartsComponent } from './Components/charts/charts.component';
 import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { EquipmentComponent } from './Components/equipment/equipment.component';
+import { FooterComponent } from './Components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { EquipmentComponent } from './Components/equipment/equipment.component';
     QuestionsComponent,
     ChartsComponent,
     NavbarComponent,
-    EquipmentComponent
+    EquipmentComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
