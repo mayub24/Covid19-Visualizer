@@ -1,0 +1,9 @@
+<div class="container">
+
+    <input class="chat" type="text" placeholder="Talk to Bot..." autocomplete="off" (keydown)="keyPressed($event)" />
+
+    <div *ngFor="let item of holder">
+        <p>{{item}}</p>
+    </div>
+
+</div>

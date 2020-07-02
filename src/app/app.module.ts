@@ -12,6 +12,7 @@ import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { EquipmentComponent } from './Components/equipment/equipment.component';
 import { FooterComponent } from './Components/footer/footer.component';
+import { ChatbotComponent } from './Components/chatbot/chatbot.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FooterComponent } from './Components/footer/footer.component';
     ChartsComponent,
     NavbarComponent,
     EquipmentComponent,
-    FooterComponent
+    FooterComponent,
+    ChatbotComponent
   ],
   imports: [
     BrowserModule,
