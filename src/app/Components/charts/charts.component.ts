@@ -12,6 +12,16 @@ export class ChartsComponent implements OnInit {
 
   typedValue = 'canada';
 
+
+  barz = [
+    {
+      name: 'pie'
+    },
+    {
+      name: 'bar'
+    }
+  ]
+
   config: SwiperOptions = {
     effect: 'coverflow',
     initialSlide: 2,
@@ -36,6 +46,7 @@ export class ChartsComponent implements OnInit {
 
   barChart: any;
   allPulledData: any;
+  barChartType: any = 'pie';
 
   constructor(private getService: GetDataService) { }
 
@@ -45,11 +56,25 @@ export class ChartsComponent implements OnInit {
 
       this.allPulledData = moreData;
 
-      this.pullAllData(this.allPulledData)
+      // this.pullAllData(this.allPulledData)
     });
 
 
   };
+
+  changeGraph(e) {
+
+    console.log(e);
+
+
+    this.barChartType = e;
+
+    console.log(this.barChartType);
+
+    this.pullAllData(this.allPulledData);
+
+
+  }
 
   pullAllData(data) {
 
@@ -57,11 +82,13 @@ export class ChartsComponent implements OnInit {
     Chart.defaults.global.defaultFontSize = 16;
     Chart.defaults.global.defaultFontColor = '#777';
 
+    console.log(this.barChartType);
+
 
     // Chart #1
     this.barChart = new Chart('barChartz',
       {
-        type: 'bar', // we can have bar, pie, line, radar, etc
+        type: `${this.barChartType}`, // we can have bar, pie, line, radar, etc
         data: {
           labels: ['Total Confirmed', 'Total Recovered', 'Total Deaths', 'Total Active'],
           datasets: [{
@@ -276,9 +303,9 @@ export class ChartsComponent implements OnInit {
         options: {
           title:
           {
-            // display: true,
-            // text: 'COVID-19 Cases in Canada by Province',
-            // fontSize: 25
+            display: true,
+            text: `COVID-19 Cases in ${data[3].provinceState}`,
+            fontSize: 25
           },
           legend:
           {

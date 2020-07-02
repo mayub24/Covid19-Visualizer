@@ -1,6 +1,17 @@
 <div class="container">
 
-    <h1>Cases by Bar Chart</h1>
+    <div class="formz" style="margin-bottom: 5em;" ng-controller="changeGraph">
+        <h2>Choose Type of Graph</h2>
+
+        <select name="" id="graphSelect" (change)="changeGraph($event.target.value)">
+            <option value="null" disabled>Select A Graph</option>
+            <option *ngFor="let bar of barz" [value]="bar.name">{{bar.name}}</option>
+            {{bar}}
+        </select>
+    </div>
+
+    <!-- <h1>Cases by Bar Chart</h1> -->
+
 
     <div class="chartz">
         <swiper [config]="config">
