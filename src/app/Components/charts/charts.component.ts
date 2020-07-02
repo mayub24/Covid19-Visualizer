@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Chart } from 'chart.js';
 import { GetDataService } from '../../Services/get-data.service';
 import { SwiperOptions } from 'swiper';
+import { createGzip } from 'zlib';
 
 @Component({
   selector: 'app-charts',
@@ -19,6 +20,15 @@ export class ChartsComponent implements OnInit {
     },
     {
       name: 'bar'
+    },
+    {
+      name: 'line'
+    },
+    {
+      name: 'radar'
+    },
+    {
+      name: 'doughnut'
     }
   ]
 
@@ -74,6 +84,10 @@ export class ChartsComponent implements OnInit {
     this.pullAllData(this.allPulledData);
 
 
+    var barz = <HTMLElement>document.getElementById("barChartz");
+    barz.remove();
+
+
   }
 
   pullAllData(data) {
@@ -105,23 +119,23 @@ export class ChartsComponent implements OnInit {
               'rgba(247, 0, 25, 0.7)',
               'rgba(74, 167, 255, 0.7)'
             ],
-            borderWidth: 3,
-            borderColor: 'black',
-            hoverBorderWidth: 3,
-            hoverBorderColor: [
-              'gray',
-              'green',
-              'red',
-              'blue'
-            ]
+            // borderWidth: 3,
+            // borderColor: 'black',
+            // hoverBorderWidth: 3,
+            // hoverBorderColor: [
+            //   'gray',
+            //   'green',
+            //   'red',
+            //   'blue'
+            // ]
           }]
         },
         options: {
           title:
           {
-            // display: true,
-            // text: 'COVID-19 Cases in Canada by Province',
-            // fontSize: 25
+            display: true,
+            text: 'COVID-19 Cases in Canada by Province',
+            fontSize: 25
           },
           legend:
           {
@@ -148,7 +162,7 @@ export class ChartsComponent implements OnInit {
     // Chart #2
     this.barChart = new Chart('barChartz2',
       {
-        type: 'bar', // we can have bar, pie, line, radar, etc
+        type: `${this.barChartType}`, // we can have bar, pie, line, radar, etc
         data: {
           labels: ['Total Confirmed', 'Total Recovered', 'Total Deaths', 'Total Active'],
           datasets: [{
@@ -210,7 +224,7 @@ export class ChartsComponent implements OnInit {
     // Chart #3
     this.barChart = new Chart('barChartz3',
       {
-        type: 'bar', // we can have bar, pie, line, radar, etc
+        type: `${this.barChartType}`, // we can have bar, pie, line, radar, etc
         data: {
           labels: ['Total Confirmed', 'Total Recovered', 'Total Deaths', 'Total Active'],
           datasets: [{
@@ -272,7 +286,7 @@ export class ChartsComponent implements OnInit {
     // Chart #4
     this.barChart = new Chart('barChartz4',
       {
-        type: 'bar', // we can have bar, pie, line, radar, etc
+        type: `${this.barChartType}`, // we can have bar, pie, line, radar, etc
         data: {
           labels: ['Total Confirmed', 'Total Recovered', 'Total Deaths', 'Total Active'],
           datasets: [{
@@ -334,7 +348,7 @@ export class ChartsComponent implements OnInit {
     // Chart #5
     this.barChart = new Chart('barChartz5',
       {
-        type: 'bar', // we can have bar, pie, line, radar, etc
+        type: `${this.barChartType}`, // we can have bar, pie, line, radar, etc
         data: {
           labels: ['Total Confirmed', 'Total Recovered', 'Total Deaths', 'Total Active'],
           datasets: [{
@@ -396,7 +410,7 @@ export class ChartsComponent implements OnInit {
     // Chart #6
     this.barChart = new Chart('barChartz6',
       {
-        type: 'bar', // we can have bar, pie, line, radar, etc
+        type: `${this.barChartType}`, // we can have bar, pie, line, radar, etc
         data: {
           labels: ['Total Confirmed', 'Total Recovered', 'Total Deaths', 'Total Active'],
           datasets: [{
@@ -456,7 +470,7 @@ export class ChartsComponent implements OnInit {
     // Chart #7
     this.barChart = new Chart('barChartz7',
       {
-        type: 'bar', // we can have bar, pie, line, radar, etc
+        type: `${this.barChartType}`, // we can have bar, pie, line, radar, etc
         data: {
           labels: ['Total Confirmed', 'Total Recovered', 'Total Deaths', 'Total Active'],
           datasets: [{
@@ -516,7 +530,7 @@ export class ChartsComponent implements OnInit {
     // Chart #8
     this.barChart = new Chart('barChartz8',
       {
-        type: 'bar', // we can have bar, pie, line, radar, etc
+        type: `${this.barChartType}`, // we can have bar, pie, line, radar, etc
         data: {
           labels: ['Total Confirmed', 'Total Recovered', 'Total Deaths', 'Total Active'],
           datasets: [{
@@ -577,7 +591,7 @@ export class ChartsComponent implements OnInit {
     // Chart #9
     this.barChart = new Chart('barChartz9',
       {
-        type: 'bar', // we can have bar, pie, line, radar, etc
+        type: `${this.barChartType}`, // we can have bar, pie, line, radar, etc
         data: {
           labels: ['Total Confirmed', 'Total Recovered', 'Total Deaths', 'Total Active'],
           datasets: [{
@@ -638,7 +652,7 @@ export class ChartsComponent implements OnInit {
     // Chart #10
     this.barChart = new Chart('barChartz10',
       {
-        type: 'bar', // we can have bar, pie, line, radar, etc
+        type: `${this.barChartType}`, // we can have bar, pie, line, radar, etc
         data: {
           labels: ['Total Confirmed', 'Total Recovered', 'Total Deaths', 'Total Active'],
           datasets: [{
@@ -699,7 +713,7 @@ export class ChartsComponent implements OnInit {
     // Chart #11
     this.barChart = new Chart('barChartz11',
       {
-        type: 'bar', // we can have bar, pie, line, radar, etc
+        type: `${this.barChartType}`, // we can have bar, pie, line, radar, etc
         data: {
           labels: ['Total Confirmed', 'Total Recovered', 'Total Deaths', 'Total Active'],
           datasets: [{
