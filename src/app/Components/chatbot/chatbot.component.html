@@ -1,9 +1,19 @@
 <div class="container">
 
+    <h1>Chat with a Bot!</h1>
+
+    <i class="fa fa-robot"></i>
+
+    <br>
+
     <input class="chat" type="text" placeholder="Talk to Bot..." autocomplete="off" (keydown)="keyPressed($event)" />
 
     <div *ngFor="let item of holder">
+
         <p>{{item}}</p>
+
+
     </div>
+
 
 </div>

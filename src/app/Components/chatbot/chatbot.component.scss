@@ -1,4 +1,30 @@
+.container
+{
+    background-color: skyblue;
+    padding: 3em;
+}
+
 input[type=text]
 {
     // margin-bottom: 6em;
+    width: 50%;
+    padding: 1em;
+}
+
+p
+{
+    margin: 1em;
+}
+
+h1
+{
+    font-weight: 100;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+i
+{
+    font-size: 4em;
+    margin-bottom: 0.5em;
 }

@@ -25,10 +25,19 @@ export class ChatbotComponent implements OnInit {
       // 2nd user input
       ["how is everything?", "how are you?"],
 
+
+      ["great", "awesome", "good", "not bad", "fantastic"],
+
       // 3rd User input
       ["whats happening?", "whats up?"],
 
       // User input regarding covid 19
+      ["whats covid-19?", "whats coronavirus?", "information on coronavirus", "information on covid-19", "give me information on covid-19", "give me information on coronavirus", "whats corona virus?"],
+
+      // User input regarding gloves, masks, wipes, hand sanitizer
+      ["where can i buy gloves?", "where can i buy masks?", "where can i buy hand sanitizer?", "where can i buy a mask?", "where can i buy disinfecting wipes?"],
+
+      ["do i have covid-19?", "do i have coronavirus?", "do i have the virus?", "do i have corona virus?"]
     ]
 
   botArray: any =
@@ -37,7 +46,15 @@ export class ChatbotComponent implements OnInit {
 
       ["Good! Yourself?", "Amazing! How are you?"],
 
-      ["Just coding as always...", "bored to death?"]
+      ["Good to hear, How can i help you regarding covid-19?", "Nice to hear, How may i assist in in regards to Covid-19?"],
+
+      ["Just coding as always...", "bored to death..."],
+
+      ["Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus."],
+
+      ["Please follow the links above for COVID-19 equipment."],
+
+      ["Most common symptoms: fever, dry cough, tiredness. If you are experiencing any of these severly, please get tested as soon as possible. Visit https://www.who.int for more information."]
     ]
 
   notFoundValue: any =
@@ -102,12 +119,7 @@ export class ChatbotComponent implements OnInit {
       // console.log(this.userHolder);
       // console.log(this.botHolder);
 
-
-
-
-
-
-      // this.typedVal = inputVal.toLowerCase().replace(/[^\w\s\d]/gi, "");
+      // this.typedVal = inputVal.toLowerCase();
 
 
       // this.typedVal = this.typedVal
@@ -121,16 +133,16 @@ export class ChatbotComponent implements OnInit {
 
       // Calling the show function after user clicks enter
       // this.showAllOutput(inputVal);
-      if (this.compareText(this.userArray, this.botArray, this.typedVal)) {
+      if (this.compareText(this.userArray, this.botArray, this.typedVal.toLowerCase())) {
         console.log(this.userArray);
         console.log(this.botArray);
         console.log(this.typedVal);
       }
-      else {
+      else if (!this.compareText(this.userArray, this.botArray, this.typedVal)) {
         this.singleBotResponse = this.notFoundValue[Math.floor(Math.random() * this.notFoundValue.length)];
 
         console.log(this.singleBotResponse);
-        this.holder.push(this.singleBotResponse);
+        this.holder.push(`Bot: ` + this.singleBotResponse);
       }
 
 
