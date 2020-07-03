@@ -133,7 +133,7 @@ export class ChartsComponent implements OnInit {
           title:
           {
             display: true,
-            text: 'COVID-19 Cases in Canada by Province',
+            text: `COVID-19 Cases in ${data[0].provinceState}`,
             fontSize: 25
           },
           legend:
@@ -192,9 +192,9 @@ export class ChartsComponent implements OnInit {
         options: {
           title:
           {
-            // display: true,
-            // text: 'COVID-19 Cases in Canada by Province',
-            // fontSize: 25
+            display: true,
+            text: `COVID-19 Cases in ${data[1].provinceState}`,
+            fontSize: 25
           },
           legend:
           {
@@ -254,9 +254,9 @@ export class ChartsComponent implements OnInit {
         options: {
           title:
           {
-            // display: true,
-            // text: 'COVID-19 Cases in Canada by Province',
-            // fontSize: 25
+            display: true,
+            text: `COVID-19 Cases in ${data[2].provinceState}`,
+            fontSize: 25
           },
           legend:
           {
@@ -378,9 +378,9 @@ export class ChartsComponent implements OnInit {
         options: {
           title:
           {
-            // display: true,
-            // text: 'COVID-19 Cases in Canada by Province',
-            // fontSize: 25
+            display: true,
+            text: `COVID-19 Cases in ${data[4].provinceState}`,
+            fontSize: 25
           },
           legend:
           {
@@ -440,9 +440,9 @@ export class ChartsComponent implements OnInit {
         options: {
           title:
           {
-            // display: true,
-            // text: 'COVID-19 Cases in Canada by Province',
-            // fontSize: 25
+            display: true,
+            text: `COVID-19 Cases in ${data[5].provinceState}`,
+            fontSize: 25
           },
           legend:
           {
@@ -500,9 +500,9 @@ export class ChartsComponent implements OnInit {
         options: {
           title:
           {
-            // display: true,
-            // text: 'COVID-19 Cases in Canada by Province',
-            // fontSize: 25
+            display: true,
+            text: `COVID-19 Cases in ${data[6].provinceState}`,
+            fontSize: 25
           },
           legend:
           {
@@ -560,9 +560,9 @@ export class ChartsComponent implements OnInit {
         options: {
           title:
           {
-            // display: true,
-            // text: 'COVID-19 Cases in Canada by Province',
-            // fontSize: 25
+            display: true,
+            text: `COVID-19 Cases in ${data[7].provinceState}`,
+            fontSize: 25
           },
           legend:
           {
@@ -621,9 +621,9 @@ export class ChartsComponent implements OnInit {
         options: {
           title:
           {
-            // display: true,
-            // text: 'COVID-19 Cases in Canada by Province',
-            // fontSize: 25
+            display: true,
+            text: `COVID-19 Cases in ${data[8].provinceState}`,
+            fontSize: 25
           },
           legend:
           {
@@ -682,9 +682,9 @@ export class ChartsComponent implements OnInit {
         options: {
           title:
           {
-            // display: true,
-            // text: 'COVID-19 Cases in Canada by Province',
-            // fontSize: 25
+            display: true,
+            text: `COVID-19 Cases in ${data[9].provinceState}`,
+            fontSize: 25
           },
           legend:
           {
@@ -743,9 +743,9 @@ export class ChartsComponent implements OnInit {
         options: {
           title:
           {
-            // display: true,
-            // text: 'COVID-19 Cases in Canada by Province',
-            // fontSize: 25
+            display: true,
+            text: `COVID-19 Cases in ${data[10].provinceState}`,
+            fontSize: 25
           },
           legend:
           {

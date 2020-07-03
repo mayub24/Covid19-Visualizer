@@ -32,7 +32,7 @@ export class ChatbotComponent implements OnInit {
       ["whats happening?", "whats up?"],
 
       // User input regarding covid 19
-      ["whats covid-19?", "whats coronavirus?", "information on coronavirus", "information on covid-19", "give me information on covid-19", "give me information on coronavirus", "whats corona virus?"],
+      ["what is covid-19?", "what is coronavirus?", "information on coronavirus", "information on covid-19", "give me information on covid-19", "give me information on coronavirus", "whats corona virus?"],
 
       // User input regarding gloves, masks, wipes, hand sanitizer
       ["where can i buy gloves?", "where can i buy masks?", "where can i buy hand sanitizer?", "where can i buy a mask?", "where can i buy disinfecting wipes?"],
